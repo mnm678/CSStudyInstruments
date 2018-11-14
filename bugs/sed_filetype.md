@@ -5,7 +5,7 @@
 * Current Stage: Bug Identified
 * Brief description (This can change as you progress) :
 
-The sed command does not error when the filetype is changed to a directory in crash simulator.
+The sed command does not error when the filetype is changed to a FIFO in crash simulator.
 
 
 ## Updates
@@ -15,4 +15,4 @@ The sed command does not error when the filetype is changed to a directory in cr
 
 **Current Stage: Bug Identified**
 
-Bug discovered when changing file types in an fstat call with rreplay. After discovering it, I found that the tool does not work for directories, and usually displays an error. I will investigate why the error does not appear when the fstat is changed. It is possibly checked earlier, but not checking again could allow for a race condition.
+Bug discovered when changing file types in an fstat call with rreplay. The program seems to check for character devices and behave differently, but it does not check for a FIFO
