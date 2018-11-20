@@ -16,3 +16,7 @@ The crontab command does not error when the filetype of crontab is changed from 
 **Current Stage: Bug Identified**
 
 Bug discovered when changing file types in an fstat call with rreplay. Multiple fstat calls do not respond to a change in the st_mode.
+
+### Week 2
+
+I couldn't reproduce this bug with an updated version of crash simulator. I will continue to investigate.
