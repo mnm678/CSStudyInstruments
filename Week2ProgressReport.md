@@ -7,3 +7,7 @@ Issues filed in rrapper:
 Git issues:
 
 * My local git version was refusing to pull changes from upstream branches, so I spent some time working on that, then eventually did a hard reset of my local copy.
+
+Reinstalling rr:
+
+* I tried to get the output_event_number branch working, but had a lot of issues rebuilding rr.
