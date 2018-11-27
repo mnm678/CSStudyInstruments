@@ -16,3 +16,7 @@ Whois fails if a gettimeofday call returns a different value.
 **Current Stage: Bug Identified**
 
 Bug discovered when changing the result of time calls. The program appears to crash when gettimeofday returns certain changed values.
+
+### Week 3
+
+The bug seems to be occurring during a socket call in whois that includes a timeout.
