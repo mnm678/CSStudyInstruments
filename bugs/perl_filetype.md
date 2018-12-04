@@ -22,3 +22,9 @@ Bug discovered when changing file types in an fstat call with rreplay. When the 
 **Current Stage: Source of Bug Diagnosed**
 
 perl does not appear to check the file type (or even extension) before trying to execute a script. In `pp_ctl.c` in the perl source, it appears to check for a directory or block device, but no other file types.
+
+### Week 4
+
+**Current Stage: Bug Fix Implemented**
+
+After more investigation, it appears that the script is opened in `perl.c`. I changed the check to fail on any non-regular file. I started testing the fix, and it should be ready to submit soon.

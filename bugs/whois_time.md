@@ -20,3 +20,7 @@ Bug discovered when changing the result of time calls. The program appears to cr
 ### Week 3
 
 The bug seems to be occurring during a socket call in whois that includes a timeout.
+
+### Week 4
+
+I don't think there's a way to address this issue without breaking the timeout.
