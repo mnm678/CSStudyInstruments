@@ -28,3 +28,9 @@ perl does not appear to check the file type (or even extension) before trying to
 **Current Stage: Bug Fix Implemented**
 
 After more investigation, it appears that the script is opened in `perl.c`. I changed the check to fail on any non-regular file. I started testing the fix, and it should be ready to submit soon.
+
+### Week 5
+
+**Current Stage: Bug Fix Implemented**
+
+I wrote the fix and will submit the pr next week.
