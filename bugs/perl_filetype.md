@@ -2,7 +2,7 @@
 * Project: perl
 * Project Bug Identifier:
 * Link to Bug on Project Bug Tracker:
-* Current Stage: Bug Identified
+* Current Stage: Bug Fix Submitted to Project
 * Brief description (This can change as you progress) :
 
 The perl command does not error when the filetype is changed to a FCHR in crash simulator.
@@ -34,3 +34,9 @@ After more investigation, it appears that the script is opened in `perl.c`. I ch
 **Current Stage: Bug Fix Implemented**
 
 I wrote the fix and will submit the pr next week.
+
+### Week 6
+
+**Current Stage: Bug Fix Submitted to Project**
+
+Perl takes patches through their email list, so I submitted the patch there.
